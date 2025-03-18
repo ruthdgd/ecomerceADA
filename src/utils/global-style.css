@@ -1,0 +1,10 @@
+:root {
+  --mobile: 375px;
+  --tablet: 870px;
+  --desktop: 1024px;
+  --large-desktop: 1440px;
+
+  --primary-color: #007bff;
+  --secondary-color: #ff5733;
+  --font-size: 16px;
+}

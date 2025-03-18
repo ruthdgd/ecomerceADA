@@ -1,0 +1,73 @@
+@import "../utils/global-style.css";
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: var(--primary-color);
+  color: white;
+  position: relative;
+}
+
+.logo {
+  font-size: 24px;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+.menu-btn {
+  display: none;
+  font-size: 24px;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+@media (max-width: 946px) {
+  .menu-btn {
+    display: block; 
+  }
+
+  ul {
+    display: none; 
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background-color: #007bff;
+    padding: 20px;
+  }
+
+  ul.open {
+    display: flex; 
+  }
+}
+
+@media (min-width: 947px) {
+  .menu-btn {
+    display: none;
+  }
+
+  ul {
+    display: flex;
+  }
+}
+
+@media (max-width: 581px) {
+  .logo,
+  .cart {
+    display: none;
+  }
+}
