@@ -3,7 +3,9 @@ import './footer.css';
 const Footer = () => {
     return (
         <div className="footer">
-            <h1>Footer</h1>
+            <h4>RHIE ACCESORIOS</h4>
+            <h4>Goya - Corrientes</h4>
+            <h4>Hecho por Ruth Delgado</h4>
         </div>
     );
 };

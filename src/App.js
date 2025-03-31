@@ -1,25 +1,59 @@
-import React from "react";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import {CartProvider} from "./components/carrito/cartContext";
-import UploadImage from "./UploadImage";
+import React, { useState } from "react";
+import { Routes, Route, useLocation } from "react-router-dom";
+import AboutUs from "./components/aboutUs/aboutUs.js";
+import ProductList from "./components/product/productList";
+import FeaturedProducts from "./components/product/FeaturedProducts";
 import Cart from "./components/carrito/cart";
 import Checkout from "./components/carrito/checkout";
+import { CartProvider } from "./components/carrito/cartContext";
+import LogIn from "./components/logIn/logIn";
+import Header from "./components/header";
+import Footer from "./components/footer";
+import ProtectedRoute from "./ProtectedRoute";
+import { AuthProvider } from "./AuthContext";
 import "./App.css";
 
 const App = () => {
+  const location = useLocation();
+  const isLogIn = location.pathname === "/logIn";
+
+  const [filterType, setFilterType] = useState("all");
+
   return (
-    <CartProvider>
-      <Router>
+    <AuthProvider>
+      <CartProvider>
+        {!isLogIn && <Header setFilterType={setFilterType} />}
         <div className="app">
-          <h1>Sube tu Imagen</h1>
-          <UploadImage /> {/* Componente para subir imágenes */}
           <Routes>
-            <Route path="/cart" element={<Cart />} />
-            <Route path="/checkout" element={<Checkout />} />
+            <Route path="/" element={<ProductList filterType={filterType} />} />
+            <Route
+              path="/featured"
+              element={<FeaturedProducts filterType={filterType} />}
+            />
+            <Route
+              path="/cart"
+              element={
+                <ProtectedRoute>
+                  <Cart />
+                </ProtectedRoute>
+              }
+            />
+            <Route
+              path="/checkout"
+              element={
+                <ProtectedRoute>
+                  <Checkout />
+                </ProtectedRoute>
+              }
+            />
+            <Route path="/about" element={<AboutUs />} />
+            <Route path="/logIn" element={<LogIn />} />
+            <Route path="*" element={<h1>404 Not Found</h1>} />
           </Routes>
         </div>
-      </Router>
-    </CartProvider>
+        {!isLogIn && <Footer />}
+      </CartProvider>
+    </AuthProvider>
   );
 };
 
