@@ -1,71 +1,91 @@
-# Getting Started with Create React App
+# Ecommerce ADA para RHIE Accesorios
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Es aplicación ecommerce construida con React. Esta herramienta te permitirá compras accesorios de moda y registrarte como usuario para poder realizar pagos. 
 
-## Available Scripts
+## 🚀 Características
+ - Compra de productos.
+ - Contador de stock.
+ - Iniciar sesión, registrarte o mirar la pagina como invitado.
+ - Realizar consultas enviando un mensaje a traves de la seccion "NOSOTROS".
+ - Interfaz intuitiva y fácil de usar.
 
-In the project directory, you can run:
+## Iniciar sesión - Registrarse - Ingresar como invitado: 
 
-### `npm start`
+- Al iniciar sesión, primero aparece la opción de ingresar con una cuenta ya registrada. 
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+![Ingresar](./public/readmeImg/ingreso.PNG)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- Si no se posee cuenta, se puede realizar el registro. 
 
-### `npm test`
+![Registrarse](./public/readmeImg/registro.PNG)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- Si no se desea registrar ninunga cuenta, se puede entrar como invitado. Hay que tener en cuenta que esta opción no me va a permitir realizar compras, ya que al seleccionar el carrito, redirije a la pagina de registro/inicio de sesión. 
 
-### `npm run build`
+## Vista desde el celular
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+![Celular](./public/readmeImg/celular.PNG)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- Menú 
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+![Menu Hambuguesa](./public/readmeImg/celularmenu.PNG)
 
-### `npm run eject`
+## Vista desde la tablet
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+![Tablet](./public/readmeImg/tabletmenu.PNG)
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Página principal del ecommerce
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- Al ingresar a la página, se puede ver los productos. 
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+![Productos](./public/readmeImg/body.PNG)
 
-## Learn More
+## Productos destacados
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+![Productos Destacados](./public/readmeImg/productosdestacados.PNG)
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Nosotros
 
-### Code Splitting
+- Para entrar en contacto con personal del negocio, se puede enviar un mensaje desde la sección nosotros. 
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+![Nosotros](./public/readmeImg/nosotros.PNG)
 
-### Analyzing the Bundle Size
+## Carrito 
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+- Una vez que entremos al carrito para pagar, podemos quitar productos, todos del mismo producto o una sola unidad. 
 
-### Making a Progressive Web App
+![Carrito](./public/readmeImg/carrito.PNG)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## Proceso de compra 
 
-### Advanced Configuration
+- Para realizar la compra se debe completar este formulario. 
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+![Proceso de compra](./public/readmeImg/datoscompracarrito.PNG)
 
-### Deployment
+- Una vez completados los datos, se habilita el botón de finalizar compra. 
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+![Finalizar compra](./public/readmeImg/facturacompra.PNG)
 
-### `npm run build` fails to minify
+- Compra realizada con exito
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-# ecomerceADA
+![Compra exitosa](./public/readmeImg/compraconexito.PNG)
+
+## Productos sin stock
+
+- Cuanto el contador de productos llega a 0, pasa a estar Fuera de Stock. 
+
+![Fuera de stock](./public/readmeImg/sinstock.PNG)
+
+## Footer
+
+- Seleccionando el nombre del negodio, podemos llegar al instagram del mismo.
+
+![Footer](./public/readmeImg/footer.PNG)
+
+
+## Autora
+- ** RUTH DELGADO **
+
+## 📬 Contacto
+Si tienes alguna pregunta o sugerencia, no dudes en contactarme:
+
+Email: rinesdelgo@gmail.com
